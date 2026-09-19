@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Decision-Relative Authority Closure: When Information Exists but Cannot Be Permissibly Acquired to Resolve a Decision"
+version: "V1"
+authors:
+  - family-names: "Akhtar"
+    given-names: "Mohammad Amir Khusru"
+doi: "10.5281/zenodo.22848073"
+date-released: "2026"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Akhtar"
+      given-names: "Mohammad Amir Khusru"
+  title: "Decision-Relative Authority Closure: When Information Exists but Cannot Be Permissibly Acquired to Resolve a Decision"
+  year: 2026
+  version: "V1"
+  publisher:
+    name: "Zenodo"
+  doi: "10.5281/zenodo.22848073"
