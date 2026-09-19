@@ -8,7 +8,7 @@ on:
 jobs:
   test-and-exhaust:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - uses: actions/checkout@v4
@@ -20,14 +20,20 @@ jobs:
       - name: Install
         run: python -m pip install -e . pytest
 
-      - name: Unit tests
+      - name: Unit and theorem-property tests
         run: pytest -q
 
       - name: Exhaustive finite verification
         run: python scripts/run_exhaustive.py --max-worlds 4 --max-experiments 2 --cap 100000
 
-      - name: Show result
+      - name: Randomized higher-dimensional stress test
+        run: python scripts/random_stress.py --cases 25000 --seed 20260919 --max-worlds 7 --max-experiments 6 --max-decisions 3 --max-outcomes 3 | tee results/random_stress.json
+
+      - name: Show exhaustive result
         run: cat results/exhaustive_summary.json
+
+      - name: Show stress result
+        run: cat results/random_stress.json
 
       - name: Upload verification artifacts
         uses: actions/upload-artifact@v4
