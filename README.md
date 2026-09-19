@@ -13,7 +13,7 @@ Let:
 - (g: W \to D): required decision in each world
 - (E): experiments
 - (O_e(w)): deterministic outcome of experiment (e) in world (w)
-- (ho(e) \subseteq D): decisions under which experiment (e) is authorized
+- (\rho(e) \subseteq D): decisions under which experiment (e) is authorized
 
 For an unresolved class (C \subseteq W), experiment (e) is admissible iff
 
@@ -33,17 +33,17 @@ This repository implements:
 4. automated theorem-regression tests,
 5. GitHub Actions workflow producing machine-readable results.
 
-## Main conjecture tested by the software
+## Authorization-Closure Characterization
 
 Under hereditary decision-relative authorization,
 
 [
-	ext{authorization-safe resolution exists}
+\text{authorization-safe resolution exists}
 \iff
-g 	ext{ is constant on every block of the authorization closure fixed point.}
+g \text{ is constant on every block of the authorization closure fixed point.}
 ]
 
-The workflow compares the closure test against brute-force adaptive search over thousands of generated finite systems.
+The workflow compares the closure test against brute-force adaptive search over generated finite systems.
 
 ## Run locally
 
@@ -64,7 +64,11 @@ The GitHub Actions workflow uploads these as artifacts.
 
 ## Scope
 
-This is a mathematical and computational testbed. It does **not** claim that the theory is novel merely because the software passes its tests. Prior-art review and formal proof remain separate research tasks.
+This is a mathematical and computational testbed for decision-relative authorization and adaptive evidence acquisition.
+
+## Citation
+
+Akhtar, M. A. K. (2026). Decision-Relative Authority Closure: When Information Exists but Cannot Be Permissibly Acquired to Resolve a Decision (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22848073
 
 ## License
 
