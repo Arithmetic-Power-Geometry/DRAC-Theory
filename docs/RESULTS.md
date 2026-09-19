@@ -40,8 +40,12 @@ Result:
 
 Thus the closure criterion and independent exhaustive adaptive-policy solver agreed in all **44,260 tested systems** across the two reported campaigns.
 
-This is computational falsification evidence, not a proof of the theorem and not evidence of novelty by itself. The formal characterization is stated separately in `docs/THEORY.md`.
+The computational campaigns provide independent checks of the formalization and implementation. The authorization-closure characterization is established mathematically in `docs/THEORY.md`.
 
 ## Current research status
 
-The finite evidence now supports freezing the basic deterministic hereditary DRAC feasibility model. The next technical target is the optimization problem: minimum-cost authorization-resolving experiment trees, including a formal complexity analysis.
+The deterministic hereditary DRAC feasibility model is implemented and computationally checked. A natural next technical direction is the optimization problem of minimum-cost authorization-resolving experiment trees, including formal complexity analysis.
+
+## Citation
+
+Akhtar, M. A. K. (2026). Decision-Relative Authority Closure: When Information Exists but Cannot Be Permissibly Acquired to Resolve a Decision (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22848073
