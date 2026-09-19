@@ -60,6 +60,10 @@ This statement concerns **feasibility**, not cost. Different orders may have dif
 
 There are at most (|W|-1) strict global refinement stages that increase the number of blocks by at least one.
 
-## Computational claim to test
+## Computational verification
 
-The implementation compares the closure criterion with a separately implemented brute-force recursive adaptive-tree solver. Agreement is evidence against implementation/formulation errors; it is not a substitute for the proof above or for prior-art review.
+The implementation compares the closure criterion with a separately implemented brute-force recursive adaptive-tree solver. Agreement provides an independent check of the formalization and implementation.
+
+## Citation
+
+Akhtar, M. A. K. (2026). Decision-Relative Authority Closure: When Information Exists but Cannot Be Permissibly Acquired to Resolve a Decision (Version V1). Zenodo. https://doi.org/10.5281/zenodo.22848073
